@@ -15,19 +15,18 @@ Once the install for uWebSocketIO is complete, the main program can be built and
 4. make
 5. ./ExtendedKF
 
-INPUT: values provided by the simulator to the c++ program
+**INPUT**: values provided by the simulator to the c++ program
 
-["sensor_measurement"] => the measurement that the simulator observed (either lidar or radar)
+**sensor_measurement** => the measurement that the simulator observed (either lidar or radar)
 
+**OUTPUT**: values provided by the c++ program to the simulator
 
-OUTPUT: values provided by the c++ program to the simulator
-
-["estimate_x"] <= kalman filter estimated position x
-["estimate_y"] <= kalman filter estimated position y
-["rmse_x"]
-["rmse_y"]
-["rmse_vx"]
-["rmse_vy"]
+**rmse_x**
+**rmse_y**
+**rmse_vx**
+**rmse_vy**
+**estimate_x"** <= kalman filter estimated position x
+**estimate_y** <= kalman filter estimated position y
 
 ---
 

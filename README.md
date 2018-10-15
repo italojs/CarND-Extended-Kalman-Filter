@@ -87,3 +87,32 @@ The EKF accuracy was:
 
 - Dataset 1 : RMSE <= [0.0973, 0.0855, 0.4513, 0.4399]
 - Dataset 2 : RMSE <= [0.0726, 0.0965, 0.4216, 0.4932]
+
+## Following the Correct Algorithm
+
+### Your Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons.
+
+The Kalman filter implementation can be found [src/kalman_filter.cpp](./src/kalman_filter.cpp) and it is used to predict at [src/FusionEKF.cpp](./src/FusionEKF.cpp#L114) line 114 and to update line 123.
+
+### Your Kalman Filter algorithm handles the first measurements appropriately.
+
+The first measurement is handled at [src/FusionEKF.cpp](./src/FusionEKF.cpp#L46)  from line 46
+
+### Your Kalman Filter algorithm first predicts then updates.
+
+The predict operation could be found at [src/FusionEKF.cpp](./src/FusionEKF.cpp#L48) line 48
+
+### Your Kalman Filter can handle radar and lidar measurements.
+
+Different type of measurements are handled in two places in [src/FusionEKF.cpp](./src/FusionEKF.cpp):
+
+- For the first measurement from line 46.
+- handle radar and lidar from line 52 and 72
+- For the update part from line 120
+
+## Code Efficiency
+
+### Your algorithm should avoid unnecessary calculations.
+
+An example of this calculation optimization is when the Q matrix is calculated [src/FusionEKF.cpp](./src/FusionEKF.cpp#L100) line 100
+

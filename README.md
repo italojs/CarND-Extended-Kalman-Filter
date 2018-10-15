@@ -21,12 +21,12 @@ Once the install for uWebSocketIO is complete, the main program can be built and
 
 **OUTPUT**: values provided by the c++ program to the simulator
 
-**rmse_x**
-**rmse_y**
-**rmse_vx**
-**rmse_vy**
-**estimate_x"** <= kalman filter estimated position x
-**estimate_y** <= kalman filter estimated position y
+**rmse_x**<br>
+**rmse_y**<br>
+**rmse_vx**<br>
+**rmse_vy**<br>
+**estimate_x"** <= kalman filter estimated position x<br>
+**estimate_y** <= kalman filter estimated position y<br>
 
 ---
 
@@ -61,12 +61,6 @@ Connected!!!
 ```
 So open the simulator and it will cenect on c++ projetc automatically
 
-The following is an image of the simulator runing using dataset 1:
-![Simulator with dataset 1](images/simulator_dataset1.gif)
-
-The following is an image of the simulator runing using dataset 2:
-![Simulator with dataset 2](images/simulator_dataset2.gif)
-
 ### Datasets
 
 The simulator provides two datasets. The difference between them are:
@@ -76,11 +70,11 @@ The simulator provides two datasets. The difference between them are:
 
 Here is the simulator final state after running the EKL with dataset 1:
 
-![Simulator with dataset 1](images/simulator_dataset1.png)
+![Simulator with dataset 1](images/simulator_dataset1.gif)
 
 Here is the simulator final state after running the EKL with dataset 2:
 
-![Simulator with dataset 1](images/simulator_dataset2.png)
+![Simulator with dataset 2](images/simulator_dataset2.gif)
 
 # Udacity [Rubric](https://review.udacity.com/#!/rubrics/748/view) points
 
